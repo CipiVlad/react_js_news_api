@@ -4,7 +4,7 @@ import NewsCard from './NewsCard'
 const NewsList = () => {
     const [data, setData] = useState([]);
     useEffect(() => {
-        fetch('https://newsapi.org/v2/top-headlines?country=de&apiKey=aed770fafa9a42dca28e415a5b33d732')
+        fetch('https://newsapi.org/v2/top-headlines?country=de&apiKey=')
             .then(res => res.json())
             .then(json => {
                 setData(json.articles);
